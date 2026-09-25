@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1
+            {
+                background-color: aqua;
+            }
+            fieldset
+            {
+                border-width: 5px; border-radius: 12px; width: 33%; color: purple; border-color: blue; box-shadow: -10px 13px 15px gray;
+            }
+            #email
+            {
+                border-radius: 6px; border-color: black;
+            }
+            #password
+            {
+                border-radius: 6px; border-color: black;
+            }
+            .login
+            {
+                background-color: black; color: white; border: none; border-radius: 12px; padding: 9px 13px; box-shadow: -10px 8px 20px gray; font-size: 13px; cursor: pointer;
+
+            
+            }
+            .login:hover
+            {
+                background-color: blue; scale: 1.07; transition: 0.2s;
+            }
+            #firstname
+            {
+                border-radius: 6px; border-color: black;
+            }
+            #lastname
+            {
+                border-radius: 6px; border-color: black;
+            }        
+            #age
+            {
+                border-radius: 6px; border-color: black;
+            }
+            .count
+            {
+                border-radius: 6px; border-color: black;
+            }
+            #comments
+            {
+                border-radius: 8px; border-color: black;
+            }
+            body
+            {
+                text-shadow: -1px 1px 3px gray; background-color: wheat;
+            }
+            .final
+            {
+                background-color: black; color: white; border: none; border-radius: 12px; padding: 11px 14px; box-shadow: -10px 8px 20px gray; font-size: 13px; cursor: pointer;
+
+            }
+            .final:hover
+            {
+                background-color: blue; scale: 1.07; transition: 0.2s;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to Lyn's Intellectual Program </h1><br><br>
+        <em>Participants are expected to fill in the following credentials in order to continue to this webpage:</em> <br>
+        <form action="" method="">
+            <fieldset><legend>Login Information</legend>
+            <label for="email">Enter email/username: </label>
+            <input type="email" id="email" name="email" value="" placeholder="intellectual123@email.com" required><br>
+            <label for="passwword">Enter password: </label>
+            <input type="password" id="password" name="email" value="" placeholder="********" required><br><br>
+            <button type="submit" class="login">Login</button></fieldset>
+            <br><br>
+            <label for="firstname" >Firstname: </label>
+            <input type="text" id="firstname" name="firstname" value="" placeholder="John" required><br>
+            <label for="lastname">Lastname: </label>
+            <input type="text" id="lastname" name="lastname" value="" placeholder="Michaelson" required><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female"><br>
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" value="" min="18" max="60" required><br>
+            <label for="Country">Country:</label>
+            <select name="country" class="count">
+                <option value="ng">Nigeria</option>
+                <option value="gh">Ghana</option>
+                <option value="cd">Canada</option>
+                <option value="us">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="au">Australia</option>
+                <option value="ugd">Uganda</option>
+                <option value="chn">China</option>
+                <option value="kr">Korea</option>
+                <option value="jp">Japan</option>
+                <option value="tur">Turkey</option>
+            </select><br><br>
+            <em><b>Selct areas you are known to have talent for: </b></em><br>
+            <label for="music">Music</label><input type="checkbox" name="talent" value="music" id="music" class="checkbox">
+            <label for="law">Law</label><input type="checkbox" name="talent" value="law" id="law" class="checkbox">
+            <label for="coding">Coding</label><input type="checkbox" name="talent" value="coding" id="coding" class="checkbox">
+            <label for="arts">Arts</label><input type="checkbox" name="talent" value="arts" id="arts" class="checkbox">
+            <label for="science">Science</label><input type="checkbox" name="talent" value="science" id="science" class="checkbox">
+            <label for="engineering">Engineering</label><input type="checkbox" name="talent" value="engineering" id="engineering" class="checkbox">
+            <label for="astronomy">Astronomy</label><input type="checkbox" name="talent" value="astronomy" id="astronomy" class="checkbox">
+            <label for="research">Research</label><input type="checkbox" name="talent" value="research" id="research" class="checkbox">
+            <label for="detective">Detective</label><input type="checkbox" name="talent" value="detective" id="detective" class="checkbox">
+            <label for="psychologist">Psychologist</label><input type="checkbox" name="talent" value="psychologist" id="psychologist" class="checkbox"><br><br><br>
+            <label for="comments">Please can identify some additional information that we may like to know more about you:</label><br><br>
+            <textarea name="" id="comments" cols="50" rows="18" required></textarea> <br><br><br>
+            <button type="submit" class="final">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset" class="reset">Reset</button>
+        </form>
+    </body>
+</html>
